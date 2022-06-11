@@ -933,14 +933,31 @@ h1, h2, h3, p {
         justify-content: center;
 }
 
-.check-input {
-
+.checkbox {
+        appearance: none;
 }
 
-.check-label {
+.check-icon {
+        margin-right: 8px;
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--secondary-text-color);
+        border-radius: 2px;
+        box-sizing: content-box;
+}
+
+.check-svg {
+        width: 100%;
+        height: 100%;
+}
+
+.checkbox:checked + .check-icon {
+        border: none;
+        background-color: var(--secondary-color);
 }
 
 .agree-link {
+        padding-left: 4px;
         text-decoration: underline;
 }
 
