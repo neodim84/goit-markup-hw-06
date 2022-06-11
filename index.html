@@ -29,8 +29,12 @@
 						<span class="logo-end">Studio</span>
 					</a>
 					<ul class="nav-list">
-						<li class="nav-item"><a href="./index.html" class="link-active nav-link">Студия</a></li>
-						<li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+						<li class="nav-item">
+							<a href="./index.html" class="link-active nav-link">Студия</a>
+						</li>
+						<li class="nav-item">
+							<a href="./portfolio.html" class="nav-link">Портфолио</a>
+						</li>
 						<li class="nav-item"><a href="/" class="nav-link">Контакты</a></li>
 					</ul>
 				</nav>
@@ -40,13 +44,17 @@
 				<ul class="cont-list">
 					<li class="cont-item">
 						<a href="mailto:info@devstudio.com" class="cont-link">
-							<svg width="16" height="12" class="svg"><use href="./images/sprite.svg#envelope"></use></svg>
+							<svg width="16" height="12" class="cont-svg">
+								<use href="./images/sprite.svg#envelope"></use>
+							</svg>
 							info@devstudio.com
 						</a>
 					</li>
 					<li class="cont-item">
 						<a href="tel:+380961111111" class="cont-link">
-							<svg width="10" height="16" class="svg"><use href="./images/sprite.svg#smartphone"></use></svg>
+							<svg width="10" height="16" class="cont-svg">
+								<use href="./images/sprite.svg#smartphone"></use>
+							</svg>
 							+38 096 111 11 11
 						</a>
 					</li>
@@ -127,7 +135,9 @@
 						<li class="activity-item">
 							<div class="activity-thumb">
 								<img src="./images/image1.jpg" alt="дизайн сайта на ПК" width="370" class="activity-img" />
-								<div class="activity-label"><p class="activity-text">Десктопные приложения</p></div>
+								<div class="activity-label">
+									<p class="activity-text">Десктопные приложения</p>
+								</div>
 							</div>
 						</li>
 						<li class="activity-item">
@@ -138,13 +148,17 @@
 									width="370"
 									class="activity-img"
 								/>
-								<div class="activity-label"><p class="activity-text">Мобильные приложения</p></div>
+								<div class="activity-label">
+									<p class="activity-text">Мобильные приложения</p>
+								</div>
 							</div>
 						</li>
 						<li class="activity-item">
 							<div class="activity-thumb">
 								<img src="./images/image3.jpg" alt="дизайн сайта на планшете" width="370" class="activity-img" />
-								<div class="activity-label"><p class="activity-text">Дизайнерские решения</p></div>
+								<div class="activity-label">
+									<p class="activity-text">Дизайнерские решения</p>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -326,42 +340,42 @@
 						<ul class="client-list">
 							<li class="client-item">
 								<a href="/" class="client-link">
-									<svg class="client">
+									<svg class="client-svg">
 										<use href="./images/sprite.svg#client1"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="client-item">
 								<a href="/" class="client-link">
-									<svg class="client">
+									<svg class="client-svg">
 										<use href="./images/sprite.svg#client2"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="client-item">
 								<a href="/" class="client-link">
-									<svg class="client">
+									<svg class="client-svg">
 										<use href="./images/sprite.svg#client3"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="client-item">
 								<a href="/" class="client-link">
-									<svg class="client">
+									<svg class="client-svg">
 										<use href="./images/sprite.svg#client4"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="client-item">
 								<a href="/" class="client-link">
-									<svg class="client">
+									<svg class="client-svg">
 										<use href="./images/sprite.svg#client5"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="client-item">
 								<a href="/" class="client-link">
-									<svg class="client">
+									<svg class="client-svg">
 										<use href="./images/sprite.svg#client6"></use>
 									</svg>
 								</a>
@@ -387,7 +401,9 @@
 							<li class="cont-foot-item">
 								<a href="mailto:info@devstudio.com" class="cont-foot-link">info@devstudio.com</a>
 							</li>
-							<li class="cont-foot-item"><a href="tel:+380961111111" class="cont-foot-link">+38 096 111 11 11</a></li>
+							<li class="cont-foot-item">
+								<a href="tel:+380961111111" class="cont-foot-link">+38 096 111 11 11</a>
+							</li>
 						</ul>
 					</address>
 				</div>
@@ -429,43 +445,56 @@
 				<div class="mailing">
 					<p class="social-text">подпишитесь на рассылку</p>
 					<form name="mailing-form" class="form-mailing">
-					<label class="mailing-label">
-						<input type="email" name="mailing" placeholder="E-mail" class="mailing-input" />
-					</label>
-					<button type="submit" class="btn-mail">
+						<label class="mailing-label">
+							<input type="email" name="mailing" placeholder="E-mail" class="mailing-input" />
+						</label>
+						<button type="submit" class="btn-mail">
 							Подписаться
-							<svg width="24" height="24" class="svg-send"><use href="./images/sprite.svg#send"></use></svg>
-					</button>
-				</form>
+							<svg class="send-svg">
+								<use href="./images/sprite.svg#send"></use>
+							</svg>
+						</button>
+					</form>
 				</div>
 			</div>
 		</footer>
+
+		<!-- Модальное окно -->
+
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="btn-close" data-modal-close>
-					<svg width="18" height="18" class="svg-close"><use href="./images/sprite.svg#close"></use></svg>
+					<svg width="18" height="18" class="close-svg">
+						<use href="./images/sprite.svg#close"></use>
+					</svg>
 				</button>
 				<form name="order-form" class="form-order">
 					<h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
-					<div class="form-field"><label class="form-label">
-						Имя
-						<input type="text" name="name" class="form-input">
-					</label></div>
-					<div class="form-field"><label class="form-label">
-						Телефон
-						<input type="tel" name="telephone" class="form-input">
-					</label></div>
-					<div class="form-field"><label class="form-label">
-						Почта
-						<input type="email" name="email" class="form-input">
-					</label></div>
-					<div class="form-field"><label class="form-label">
-						Комментарий
-						<textarea name="comment" placeholder="Введите текст" rows="4" class="form-area"></textarea>
-					</label></div>
-					<div class="form-field"><label class="form-label">
-						<input type="checkbox" class="form-check">Соглашаюсь с рассылкой и принимаю <a href="/" class="agree-link">Условия договора</a>
-					</label></div>
+						<label class="form-field">
+							<span class="form-label">Имя</span>	
+							<input type="text" name="name" class="form-input" />
+							<span class="form-icon"><svg class="form-svg"><use href="./images/sprite.svg#person"></use></svg></span>
+						</label>
+						<label class="form-field">
+							<span class="form-label">Телефон</span>
+							<input type="tel" name="telephone" class="form-input" />
+							<span class="form-icon"><svg class="form-svg"><use href="./images/sprite.svg#phone"></use></svg></span>
+						</label>	
+						<label class="form-field">
+							<span class="form-label">Почта</span>
+							<input type="email" name="email" class="form-input" />
+							<span class="form-icon"><svg class="form-svg"><use href="./images/sprite.svg#email"></use></svg></span>
+						</label>
+						<label class="form-comment">
+							<span class="form-label">Комментарий</span>
+							<textarea name="comment" placeholder="Введите текст" rows="6" class="form-area"></textarea>
+						</label>
+						<label class="form-check">
+							<span class="form-icon"><svg width="18" height="18"><use href="./images/sprite.svg#check"></use></svg></span>
+							<input type="checkbox" class="check-input visually-hidden" />
+							<span class="check-label">Соглашаюсь с рассылкой и принимаю</span>
+								<a href="/" class="agree-link">Условия договора</a>
+						</label>
 					<button type="submit" class="btn-modal">Отправить</button>
 				</form>
 			</div>
