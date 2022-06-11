@@ -958,6 +958,7 @@ h1, h2, h3, p {
 
 .agree-link {
         padding-left: 4px;
+        color: var(--secondary-color);
         text-decoration: underline;
 }
 
